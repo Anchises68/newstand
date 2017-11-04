@@ -1,4 +1,8 @@
 class ArticlesController < ApplicationController
+
+  before_action :require_login, :except => [:index]
+
+
   def index
     @articles = Article.all
   end
@@ -47,14 +51,14 @@ class ArticlesController < ApplicationController
       params.require(:article).permit(:title, :author, :body)
     end
 
-    before_action :require_login
-
-    private
+    def logged_in?
+      current_user != nil
+    end
 
     def require_login
-      unless index
-        flash[:error] = "You must be logged in to access this section"
-        redirect_to new_login_url # halts request cycle
+      unless logged_in?
+        flash[:error] = "Please log in."
+        redirect_to login_path
       end
     end
 end
