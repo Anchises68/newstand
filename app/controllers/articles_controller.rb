@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
 
   before_action :require_login, :except => [:index]
+  after_action :only => [:index, :show, :new]
+  before_action :require_author, :only => [:edit, :update, :destroy]
 
 
   def index
@@ -57,8 +59,9 @@ class ArticlesController < ApplicationController
 
     def require_login
       unless logged_in?
-        flash[:error] = "Please log in."
-        redirect_to login_path
+        redirect_to login_path, :flash => { :error => 'Please log in.'}
       end
     end
+
+
 end
