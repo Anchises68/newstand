@@ -1,0 +1,42 @@
+// Place all the styles related to the Authors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*    AUTHORS    */
+
+.author {
+  border-bottom: 1px solid #282828;
+  margin: 0 50px 50px;
+  padding: 0 0 50px;
+  width: 600px;
+}
+
+.author a {
+  text-decoration: none;
+}
+
+.author a h2 {
+  background: rgba(255,255,255,0.25);
+  color: #282828;
+  display: inline;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+  transition: background 1s;
+}
+
+.author h2 {
+  color: #282828;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+
+.author, .date, .user_email {
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.author_content {
+  font-weight: 300;
+  line-height: 24px;
+}

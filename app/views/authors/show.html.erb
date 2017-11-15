@@ -1,0 +1,15 @@
+<div class="author">
+  <div class="container">
+    <h2><%= @author %></h2>
+    <p class="author">by <%= @article.author %></p>
+    <p class="article_content"><%= @article.body %></p>
+
+    <% if current_user && current_user.author? %>
+      <p class="update-article">
+        <%= link_to "Edit", edit_article_path(@article.id), :class => "edit" %>
+        <%= link_to "Delete", article_path(@article.id), method: :delete, :class => "delete a:hover", data: { confirm: 'Are you sure?' } %>
+      </p>
+    <% end %>
+
+  </div>
+</div>
