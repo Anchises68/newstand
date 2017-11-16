@@ -1,0 +1,272 @@
+/*    ARTICLES    */
+/* line 7, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.article {
+  border-bottom: 1px solid #282828;
+  margin: 0 50px 50px;
+  padding: 0 0 50px;
+  width: 600px;
+}
+
+/* line 14, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.article a {
+  text-decoration: none;
+}
+
+/* line 18, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.article a h2 {
+  background: rgba(255, 255, 255, 0.25);
+  color: #282828;
+  display: inline;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+  transition: background 1s;
+}
+
+/* line 28, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.article h2 {
+  color: #282828;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+
+/* line 35, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.author, .date, .user_email {
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+/* line 40, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.article_content {
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 45, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.btn a {
+  display: block;
+  font-weight: 300;
+  margin: 0 0 4px;
+}
+
+/* line 51, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.edit {
+  margin: 50px 0 0;
+}
+
+/* line 55, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/articles.scss */
+.delete a:hover {
+  background: #ff2957;
+  color: #fff;
+}
+/*    AUTHORS    */
+/* line 7, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/authors.scss */
+.author {
+  border-bottom: 1px solid #282828;
+  margin: 0 50px 50px;
+  padding: 0 0 50px;
+  width: 600px;
+}
+
+/* line 14, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/authors.scss */
+.author a {
+  text-decoration: none;
+}
+
+/* line 18, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/authors.scss */
+.author a h2 {
+  background: rgba(255, 255, 255, 0.25);
+  color: #282828;
+  display: inline;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+  transition: background 1s;
+}
+
+/* line 28, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/authors.scss */
+.author h2 {
+  color: #282828;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+
+/* line 35, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/authors.scss */
+.author, .date, .user_email {
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+/* line 40, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/authors.scss */
+.author_content {
+  font-weight: 300;
+  line-height: 24px;
+}
+/*      FORMS     */
+/* line 6, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/sessions.scss */
+.login .container, .signup .container, .update-article .container {
+  width: 600px;
+  margin: 0 50px 50px;
+}
+
+/* line 11, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/sessions.scss */
+form input, form textarea {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 4px;
+  padding: 6px 20px;
+  transition: border-bottom 1s;
+  width: calc(100% - 40px);
+}
+
+/* line 23, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/sessions.scss */
+form input:focus, form textarea:focus {
+  border-bottom: 2px solid #ffff00;
+  box-shadow: 0 0;
+  outline: 0;
+  transition: border-bottom 1s;
+}
+
+/* line 30, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/sessions.scss */
+form input.btn-submit {
+  width: 100%;
+}
+
+/* line 34, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/sessions.scss */
+form input.btn-submit:focus {
+  border-bottom: 2px solid transparent;
+}
+
+/* line 38, /Users/AlexMireles/Documents/Documents_MonsterMac/RailsWorkspace/newstand/app/assets/stylesheets/sessions.scss */
+form textarea {
+  min-height: 400px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   background: #41acf4;
+   color: #fff;
+   font-family: 'Roboto Slab', serif;
+   height: 100%;
+   width: 100%;
+ }
+
+ .dark {
+   color: #282828;
+ }
+
+ /*    HEADER    */
+
+ .header {
+   height: 200px;
+   position: relative;
+ }
+
+ .header h1 {
+   font-size: 72px;
+   height: 200px;
+   line-height: 200px;
+   margin: 0 50px 0;
+ }
+
+ .header a {
+   text-decoration: none;
+   color: #fff;
+ }
+
+ .header a .dark {
+   color: #282828;
+ }
+
+ .nav ul {
+   list-style: none;
+   position: absolute;
+   right: 25px;
+   text-align: right;
+   text-transform: lowercase;
+   top: 25px;
+ }
+
+ .nav ul li {
+   display: inline-block;
+   font-weight: 300;
+ }
+
+ .nav ul li a, .btn a, form input.btn-submit {
+   background: rgba(255,255,255,0.25);
+   color: #282828;
+   display: block;
+   min-width: 80px;
+   padding: 6px 20px;
+   text-align: center;
+   text-decoration: none;
+   transition: background 1s;
+ }
+
+ .nav ul li a:hover, .article a h2:hover, .btn a:hover, form input.btn-submit:hover {
+   background: rgba(255,255,255,1);
+   cursor: pointer;
+   transition: background 1s;
+ }
+
+ #email {
+   margin: 0 20px;
+ }
+
+ /**********
+   MEDIA QUERIES
+ **********/
+
+ @media screen and (max-width: 520px) {
+   /*    HEADER    */
+   .header {
+     height: 180px;
+   }
+
+   .header h1 {
+     font-size: 40px;
+     height: 180px;
+     line-height: 180px;
+     margin: 0 30px 0;
+   }
+
+   .nav ul {
+     font-size: 13px;
+     right: 15px;
+     top: 15px;
+   }
+
+   .nav ul li a {
+     min-width: 45px;
+   }
+
+   /*    ARTICLES    */
+   .article, .login .container, .signup .container, .update-article .container {
+     margin: 0 30px 50px;
+     width: 340px;
+   }
+ }
